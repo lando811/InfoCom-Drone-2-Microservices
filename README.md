@@ -22,12 +22,16 @@ export FLASK_APP=build.py
 export FLASK_DEBUG=1
 flask run
 ```
+Open a web browser (e.g. Chromium) on your Raspberry Pi and enter the following URL. You should see a map of Lund as in the previous assignment. Make sure you see a red dot representing the drone at the LTH location.
+...
+http://localhost:5000
+...
 
 Go to `/pi`, run the Pi controller:
 ```
 python3 pi_controller.py
 ```
-You can replace `pi_controller.py` with the one you created in Part 1, but keep `SERVER_URL` the same as in the file provied in this lab.
+You can replace `pi_controller.py` with the one you created in Part 1, but keep `SERVER_URL` the same as in the file provided in this lab.
 
-Note: Don't user `python3 build.py` or `python3 database.py` to run the webservers, since this does not provide all the functionality requied by the application.
+Note: Don't use `python3 build.py` or `python3 database.py` to run the webservers, since this does not provide all the functionality requied by the application.
 
