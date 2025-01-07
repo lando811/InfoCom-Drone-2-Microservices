@@ -29,5 +29,5 @@ python3 pi_controller.py
 ```
 You can replace `pi_controller.py` with the one you created in Part 1, but keep `SERVER_URL` the same as in the file provied in this lab.
 
-Note: Don't user `python3 build.py` or `python3 database.py` to run the webservers, since this does not provide all the functionality requied by the application.
+Note: Don't use `python3 build.py` or `python3 database.py` to run the webservers, since this does not provide all the functionality requied by the application.
 
