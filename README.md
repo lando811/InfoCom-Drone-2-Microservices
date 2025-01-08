@@ -10,7 +10,7 @@ sudo apt install python3-flask-cors
 ```
 Go to `/webserver`, start your Redis server (if it is not already running, which it probably is – test using `redis-cli`) and run the two flask servers:
 
-1. Run server that for writing data to the redis server
+1. Run server for writing data to the redis server
 ```
 export FLASK_APP=database.py
 export FLASK_DEBUG=1
