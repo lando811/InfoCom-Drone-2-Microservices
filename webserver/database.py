@@ -25,13 +25,13 @@ def moveDrone(d_long, d_la):
     current_longitude = float(redis_server.get('longitude'))
     current_latitude = float(redis_server.get('latitude'))
 
-#Upate the location (long,lat) of the drone with input movement data
-updated_longitude = current_longitude + d_long
-updated_latitude = current_latitude + d_la
+    #Upate the location (long,lat) of the drone with input movement data
+    updated_longitude = current_longitude + d_long
+    updated_latitude = current_latitude + d_la
 
-#Sätter in datan i databasen
-redis_server.set('longitude', updated_longitude)
-redis_server.set('latitude', updated_latitude)
+    #Sätter in datan i databasen
+    redis_server.set('longitude', updated_longitude)
+    redis_server.set('latitude', updated_latitude)
 # ===============================================
 
 @app.route('/drone', methods=['POST'])
