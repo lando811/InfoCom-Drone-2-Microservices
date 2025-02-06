@@ -42,8 +42,8 @@ def get_location():
     while True:
         #get your longitude and latitude from the Redis server
         # ====================================================
-        longitude = None
-        latitude = None
+        longitude = redis.get()
+        latitude = redis.get()
         # ====================================================
         x_svg, y_svg = translate((longitude, latitude))
         emit('get_location', (x_svg, y_svg))
